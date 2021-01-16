@@ -18,12 +18,12 @@ package com.example.test.demos.mybatis.controller;
 
 import java.util.List;
 
+import com.example.test.demos.mybatis.mapper.MybatisDemoUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.test.demos.mybatis.entity.MybatisDemoUser;
-import com.example.test.demos.mybatis.mapper.MybatisDemoUserMapper;
 
 @RestController
 @RequestMapping("/user")

@@ -1,14 +1,18 @@
 package com.example.test.api;
 
-
-import com.example.test.api.model.UserModel;
+import com.example.test.api.result.ResultDO;
+import com.example.test.dao.dataobject.UserDO;
 
 /**
  * @author <a href="mailto:chenxilzx1@gmail.com">theonefx</a>
  */
 public interface UserService {
 
-    String getUserName(Long id);
+    ResultDO login(Integer userId, String password);
 
-    UserModel addUser(UserModel user);
+    ResultDO findUserById(Integer userId);
+
+    ResultDO insert(UserDO userDO);
+
+    ResultDO update(UserDO userDO);
 }

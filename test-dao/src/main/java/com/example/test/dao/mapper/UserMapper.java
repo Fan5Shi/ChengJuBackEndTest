@@ -9,9 +9,11 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface UserMapper {
 
-    UserDO getByName(String name);
+    UserDO login(Integer userId, String password);
 
-    UserDO getById(Long id);
+    UserDO findUserById(Integer userId);
 
-    Long insert(UserDO userDO);
+    int insert(UserDO userDO);
+
+    int update(UserDO userDO);
 }
