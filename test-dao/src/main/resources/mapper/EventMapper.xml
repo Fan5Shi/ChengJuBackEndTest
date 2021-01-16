@@ -31,7 +31,7 @@
     <insert id="insert" parameterType="com.example.test.dao.dataobject.UserDO">
         insert into user_info(user_id, password, user_name, user_birth, user_phone)
         values
-        (#{userId}, #{password}, #{userName}, #{userBirth}, #{userPhone})
+            (#{userId}, #{password}, #{userName}, #{userBirth}, #{userPhone})
     </insert>
 
     <update id="update" parameterType="com.example.test.dao.dataobject.UserDO">
